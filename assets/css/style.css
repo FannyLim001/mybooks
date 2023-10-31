@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Potta+One&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #ffebb9;
+  color: #ff9595;
+}
+
+header.navbar-container {
+  display: flex;
+  margin: 20px;
+}
+
+.navbar-container .logo h1 {
+  font-family: "Potta One", serif;
+}
+
+.navbar-container .nav-list {
+  margin: auto;
+}
+
+.nav-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list ul li {
+  margin: 0px 30px 0px 30px;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ff9595;
+}
+
+/* index */
+main .content #home {
+  margin-left: 30px;
+  display: flex;
+}
+
+main .content #home .home-image img {
+  min-width: 250px;
+  width: 600px;
+}
+
+main .content #home .home-desc h1 {
+  margin-left: 30px;
+  font-size: 75px;
+  font-weight: 800;
+}
+
+main .content #home .home-desc p {
+  margin-left: 30px;
+  font-size: 30px;
+  color: #c89c83;
+}
+
+main .header-title h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+footer {
+  background-color: #ff9595;
+  padding: 10px;
+  color: #ffebb9;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* add books */
+.header-content {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  max-width: 200px; /* You can adjust the width as needed */
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 6px;
+  border: 2px solid #ff9595;
+  background-color: #ffebb9;
+  color: #ff9595;
+  font-size: 17px;
+}
+
+.search-bar button {
+  padding: 10px 15px; /* Adjust the padding as needed */
+  border: none;
+  background-color: #ff9595;
+  color: #ffebb9;
+  cursor: pointer;
+}
+
+.add-btn button {
+  border: none;
+  background-color: #ff9595;
+  padding: 10px 20px;
+  margin-left: 100px;
+}
+
+.add-btn button a {
+  text-decoration: none;
+  color: #ffebb9;
+  font-size: 15px;
+}
+
+main .content #unfinished {
+  display: flex;
+  margin-top: 30px;
+}
+
+main .content #unfinished .unfinished-content {
+  margin-left: 50px;
+}
+
+main .content #finished {
+  display: flex;
+  margin-top: 30px;
+}
+
+main .content #finished .unfinished-content {
+  margin-left: 50px;
+}
+
+.read-button {
+  border: none;
+  background-color: #ff9595;
+  padding: 10px;
+  color: #ffebb9;
+  cursor: pointer;
+}
+
+.edit-button {
+  border: none;
+  background-color: #ff9595;
+  padding: 10px;
+  color: #ffebb9;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.delete-button {
+  border: none;
+  background-color: #ff9595;
+  padding: 10px;
+  color: #ffebb9;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Modal */
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+  border: none;
+  padding: 10px;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #ff9595;
+  border: none;
+  padding: 10px;
+  color: #ffebb9;
+}
+
+/* Add padding and center-align text to the container */
+.modal-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(71, 78, 93, 0.7);
+  backdrop-filter: blur(5px);
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ffebb9;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff9595;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* add book */
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.form-group input[type="text"] {
+  flex: 1;
+  padding: 6px;
+  border: 2px solid #ff9595;
+  background-color: #ffebb9;
+  color: #ff9595;
+  font-size: 17px;
+  width: 500px;
+}
+
+.form-group input[type="number"] {
+  flex: 1;
+  padding: 6px;
+  border: 2px solid #ff9595;
+  background-color: #ffebb9;
+  color: #ff9595;
+  font-size: 17px;
+  width: 500px;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid #ff9595;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #ff9595;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn-submit button {
+  border: none;
+  background-color: #ff9595;
+  padding: 10px 20px;
+  color: #ffebb9;
+  cursor: pointer;
+}
+
+.form-image img {
+  min-width: 250px;
+  width: 600px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+  }
+
+  main .content article {
+    flex-direction: column;
+  }
+
+  main .content #home .home-image img {
+    min-width: 250px;
+    width: 350px;
+  }
+
+  main .content #home .home-desc h1 {
+    margin-left: 30px;
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+  main .content #home .home-desc p {
+    margin-left: 30px;
+    font-size: 20px;
+    color: #c89c83;
+  }
+
+  main .content #unfinished {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  main .content #finished {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}
